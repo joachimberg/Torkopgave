@@ -1,0 +1,451 @@
+/* Modellen er lavet til Mobilen som det som det første*/
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0%; 
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1%;
+
+    
+}
+
+header img {
+    width: 15%;
+    margin: 0% 0 0 0;
+}
+
+header p {
+    font-size: 40%;
+    margin: 10%;
+}
+
+/* style til bruger menu 
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 24% 0 0 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 4px);
+    transform: rotate(-45deg) translate(-7px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-11px, -8px);
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+#menu-icon {
+	width: 40%;
+	font-size: 8px;
+	float: left;
+	display: flex;
+	flex-direction: column
+}
+.hidden {
+	display: none;
+}
+
+*/
+
+/* michelles nav-bar*/
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+#logo img {
+    width: 15%;
+}
+
+#logo,
+#main-nav a {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    color: #707070;
+    text-decoration: none;
+}
+
+#main-nav {
+    margin-right: .6em;
+    list-style: none;
+z-index: 10;
+    
+    
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#main-nav a:hover {
+    color: black;
+}
+
+
+.hidden1 {
+    display: none;
+}
+
+
+/* michelles nav-bar*/
+
+/* style til bruger menu */
+body{
+    width: 100%;
+    background-image: url(../images/baggrund-mobile2.jpg);
+    background-repeat: repeat-y;
+    
+
+}
+main{
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-column-gap: 100%;
+    text-align: center;
+    
+}
+
+
+
+.text1{
+    margin: 70% auto auto auto;
+}
+.text2{
+    margin: 0% auto 8% auto;   
+}
+.text3{
+    margin: 50% auto 8% auto; 
+}
+.text4{
+    margin: 50% auto 0% auto;
+}
+.text5{
+    margin: 95% auto 10% auto;   
+}
+
+.text1,.text2,.text3,.text4,.text5{
+    display: grid;
+    grid-area: auto;
+    background-color: #ffffff;
+    width: 80%;
+    font-size: 80%;
+    padding: 8% 0;
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+h1{
+    margin: 0 0 6% 0;
+}
+p{
+    font-size: 80%;
+}
+
+
+/*  jeg prøver lige at fine en pile ned */
+i {
+  border: solid #5D51FF;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 14px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 3% 0;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/*  jeg prøver lige at fine en pile ned */
+
+
+
+
+footer{
+    left: 0;
+    bottom: 0;
+    position:relative;
+    background-color: #5D51FF;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 130%;
+    margin: 2% 0;
+    
+    
+}
+
+/* side */
+
+
+
+/* køb her klippen */
+
+section button{
+    background: #5D51FF;
+    color: aliceblue;
+}
+/* køb her klippen */
+
+
+
+
+
+/*billeder og covers */
+
+/* til forsiden */
+#forsidebilledet{
+    width: 60%;
+    margin: 13% 0% 0% 20%;
+    position: absolute;
+    z-index: -1;
+}
+#forsidebilledet2{
+    width: 10%;
+    float: right;
+    margin: 0 0 3% 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#forsidebilledet3{
+    display: none;
+}
+/* til forsiden */
+
+
+section aside{
+    width: 30%;
+    float: left;
+}
+section #aside2{
+    float: right;
+    width: 30%;
+}
+section .produkt{
+    width: 80%;
+    margin: 50% 0 0 0;
+}
+section #produkt1{
+    width: 30%;
+    margin: 2% 0;
+}
+
+#cover1{
+    position: absolute;
+    margin: 14% 0 0 0;
+    z-index: -1;
+}
+#cover2{
+    position: absolute;
+    margin: 8% 0 0 0;
+}
+#cover3{
+    position: absolute;
+    margin: 0% 0 0 0;
+}
+#cover4{
+    margin: 0% 0;
+}
+
+#cover1,#cover2,#cover3,#cover4{
+   width: 100%; 
+    left: 0;
+}
+
+.ikon{
+    width: 20%;
+    margin: 5% 0% 5% 40%;
+}
+/*billeder og covers */
+
+
+
+
+
+
+/* til form ting */
+#formbox{
+    
+}
+
+form{
+    display: grid;
+    grid-auto-columns: auto auto auto;
+    
+}
+input{
+    width: 80%;
+    margin: 2% 0 2% 10%;
+    text-align: center;
+}
+#input2{
+    height: 500%
+}
+button{
+    background-color: #5D51FF;
+    color: aliceblue;
+    width: 80%;
+    margin: 0% auto 15% auto;
+    
+}
+/* til form ting */
+
+
+
+
+
+
+/* destop */
+
+/* nav-bar */
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    /*HEADER NAV*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; /*remove this if you do not want the column layout whit logo above menu for medium size screens*/
+    }
+
+    #logo-burger {
+        margin: 0;
+
+    }
+
+    #logo {
+        margin-top: .3em;
+    }
+
+    #main-nav {
+         width: 100%;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        margin: 0;
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /*HEADER*/
+     header {
+        flex-direction: row;
+        align-items: center;
+}
+    
+    #forsidebilledet {
+        width: 20%;
+    }
+    #forsidebilledet3{
+        width: 20%;
+    }
+    #forsidebilledet2{
+        display: none
+    }
+     
+    main {
+        width: 100%;
+    background-image: url(../images/baggrund-mobile2.jpg);
+    background-repeat: repeat;
+    }
+    i {
+        display: none;
+    }
+    .text{
+        padding: 4%;
+    }
+    
+
+}
