@@ -31,45 +31,7 @@ header p {
     margin: 10%;
 }
 
-/* style til bruger menu 
-.container {
-    display: inline-block;
-    cursor: pointer;
-    margin: 0%;
-}
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 2px;
-    background-color: #333;
-    margin: 24% 0 0 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-8px, 4px);
-    transform: rotate(-45deg) translate(-7px, 4px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-11px, -8px);
-    transform: rotate(45deg) translate(-10px, -8px);
-}
-
-#menu-icon {
-	width: 40%;
-	font-size: 8px;
-	float: left;
-	display: flex;
-	flex-direction: column
-}
-.hidden {
-	display: none;
-}
-
-*/
 
 /* michelles nav-bar*/
 
@@ -123,8 +85,6 @@ body{
     width: 100%;
     background-image: url(../images/baggrund-mobile2.jpg);
     background-repeat: repeat-y;
-    
-
 }
 main{
     display: grid;
@@ -152,7 +112,7 @@ main{
     margin: 95% auto 10% auto;   
 }
 
-.text1,.text2,.text3,.text4,.text5{
+.text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8,.textx{
     display: grid;
     grid-area: auto;
     background-color: #ffffff;
@@ -243,6 +203,7 @@ section button{
 #forsidebilledet3{
     display: none;
 }
+
 /* til forsiden */
 
 
@@ -254,7 +215,7 @@ section #aside2{
     float: right;
     width: 30%;
 }
-section .produkt{
+section .produkt2{
     width: 80%;
     margin: 50% 0 0 0;
 }
@@ -289,17 +250,15 @@ section #produkt1{
     width: 20%;
     margin: 5% 0% 5% 40%;
 }
+
+#logomidt{
+    display: none;
+}
 /*billeder og covers */
 
 
 
-
-
-
 /* til form ting */
-#formbox{
-    
-}
 
 form{
     display: grid;
@@ -375,15 +334,13 @@ button{
 }
 
 /*MEDIA QUERY TABLET AND ABOVE*/
+/*MEDIA QUERY TABLET AND ABOVE*/
+/*MEDIA QUERY TABLET AND ABOVE*/
+/*MEDIA QUERY TABLET AND ABOVE*/
 
 @media all and (min-width: 600px) {
 
     /*HEADER NAV*/
-    header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column; /*remove this if you do not want the column layout whit logo above menu for medium size screens*/
-    }
 
     #logo-burger {
         margin: 0;
@@ -395,9 +352,9 @@ button{
     }
 
     #main-nav {
-         width: 100%;
-        display: grid;
-        grid-template-rows: auto auto auto auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         margin: 0;
     }
 
@@ -413,33 +370,155 @@ button{
         display: none;
     }
 
+
+
+
+
+
+
+
+#logo{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+body{
+    width: 100%;
+    background-image: url(../images/baggrund-mobile2.jpg);
+    background-repeat: repeat;
 }
 
+/* til Forside */
+
+    #forsidebilledet{
+        width: 30%;
+        margin: 10% 0 0 0%;
+        float: left;
+    }
+    #forsidebilledet2{
+        width: 20%;
+        margin: 0 20% 40% 0;
+    }
+    .text1{
+        width: 60%;
+        padding: 2% 0;
+        margin: 40% 0 0 20%;
+    }
+    section .produkt2{
+        width: 60%;
+        margin: 0 0 0 0;
+    }
+    .text2{
+        width: 60%;
+    }
+
+/* til Forside */
+    
+/* til køb Tork */
+    
+    #coverx{
+        width: 60%;
+    }
+    #cover4{
+        width: 60%;
+    }
+    .text8, button{
+        width: 60%;
+        margin: 0 0 0 20%;
+    }
+    
+/* til køb Tork */
+    
+/* til hvordan Tork */
+    
+    #cover1, #cover2, #cover3, .text7{
+        width: 60%;
+    }
+    .text7{
+        margin: 35% 0 0 20%;
+        padding: 2%
+    }
+    #cover1{
+        margin: 10% 0 0 20%;
+    }
+    #cover2{
+        margin: 0 0 0 20%;
+    }
+    
+/* til hvordan Tork */
+    
+/* til om Tork */
+    
+    .text3,.text4,.text6,.textx{
+        width: 60%;
+        padding: 2%;
+    }
+    .text6, #cover3,.text4,.textx{
+        margin: 0 0 0 20%;
+    }
+    .textx{
+        margin-top: 28%;
+    }
+    .text4{
+        margin-top: 28%
+    }
+    .text6{
+        margin-top: 18%
+    }
+    
+    
+/* til om Tork */
+    
+/* til anbefald Tork */
+    
+    #formbox{
+        width: 75%;
+        margin: 5% 0 0 20%;
+    }
+    input{
+        margin: 0 0 5% 0;
+    }
+    input2{
+        height: 20%;
+    }
+    button{
+        width: 80%;
+        margin: 35% 25% 0 0;
+    }
+    footer{
+        display: none;
+    }
+    
+/* til anbefald Tork */    
+    }
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+/*MEDIA QUERY LAPTOP AND ABOVE*/
 /*MEDIA QUERY LAPTOP AND ABOVE*/
 
 @media all and (min-width: 1024px) {
 
     /*HEADER*/
      header {
+        display: flex;
         flex-direction: row;
         align-items: center;
+        width: 100%;
+        height: 15%;
 }
-    
-    #forsidebilledet {
-        width: 20%;
-    }
-    #forsidebilledet3{
-        width: 20%;
-    }
-    #forsidebilledet2{
-        display: none
+    #logo {
+        width: 80%
     }
      
     main {
         width: 100%;
     background-image: url(../images/baggrund-mobile2.jpg);
     background-repeat: repeat;
+        height: 100%;
     }
+    
+    
     i {
         display: none;
     }
@@ -447,5 +526,155 @@ button{
         padding: 4%;
     }
     
+    /* til Forsiden */
+     #forsidebilledet {
+        width: 20%;
+        margin: 12% 0 0 30%;
+        z-index: 10;
+        
+    }
 
+    #forsidebilledet2{
+        width: 20%;
+        margin: 11% 30% 17% 0%;
+        z-index: 10;
+        
+    }
+    
+    .text1{
+        margin: 31% 0 0 32%;
+        padding: 2%;
+        width: 36%;
+        
+    }
+    
+    section .produkt2{
+        width: 30%;
+        margin: 5% 10% 2% 0%;
+        
+    }
+    .text2{
+        width: 31%;
+        margin: 0 10% 2% 0;
+        padding: 2%;
+    }
+   
+    /* til Forsiden */
+    
+    /* til hvordan Tork */
+    
+   section #cover1{
+        width: 36%;
+        margin: 10% 0 0 22%;
+    }
+    
+    section #cover2{
+        width: 36%;
+        margin: 45% 0 0 22%;
+    }
+    .text7{
+        margin: 25.5% 0 0 32%;
+        padding: 2%;
+        width: 36%;
+    
+    }
+    
+    /* til hvordan Tork */
+    
+    /* til anbefald Tork */
+    
+    form{
+        width: 45%;
+        margin: 0 0 0 27.5%;
+    }
+    
+    button{
+        width: 36%;
+        margin: 15% 0 0 0;
+        
+    }
+    
+    /* til anbefald Tork */
+    
+    
+    /* til køb Tork */
+    
+    .text8{
+        width: 45%;
+        margin: 0% 0 0 30%;
+        padding: 2%;
+    }
+    
+    #cover4{
+        width: 45%;
+        margin: 0 0 0 5%;
+    }
+    #coverx{
+        width: 45%;
+        margin: 0 0 0 5%;
+    }
+    #button2{
+        width: 45%;
+        margin: 0 0 0 30%;
+    }
+    
+    /*til køb Tork */
+    
+    
+    /* til om Tork */
+    
+    #cover1,#cover2,#cover3 {
+        width: 50%;
+        left: 10%;
+        top: 20%;
+    }
+    .ikon{
+        width: 10%;
+    }
+    .text6,.text4,.text3{
+        width: 35%;
+        padding: 3%;
+        right: 0;
+        left: 60%;
+        
+    }
+    .text3{
+        top: 0%;
+        margin: 8% 0 0 0;
+    }
+    #cover1{
+        top: 0%;
+        margin: 10% 0 0 0;
+        z-index: 10;
+    }
+    .text6{
+        top: 0%;
+        margin: 8% 0 0 0;
+    }
+    #cover2{
+        top: 0;
+        margin: 70% 0 0 0;
+    }
+    .text4 {
+        top: 0%;
+        margin: 8% 20% 0 0;
+    }
+    #cover3{
+        top: 0;
+        margin: 35% 0 0 0;
+    }
+   
+    /* til om Tork */
+    
+    
+    #logomidt{
+        display: contents;
+    }
+    footer{
+        width: 100%;
+        height: 10%
+    }
+    footer a{
+        display: none;
+    }
 }
