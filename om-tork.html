@@ -23,63 +23,66 @@
 
 <body>
   
-   <header>
-   
-   
-   <section id="logo-burger">
+ <header>
+        <section id="logo-burger">
             <a id="logo" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
             <label for="toggle">&#9776;</label>
         </section>
         <nav>
-            <input type="checkbox" id="toggle" class="hidden1">
+            <input type="checkbox" id="toggle" class="hidden">
             <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
             <ul id="main-nav">
                 <li><a href="om-tork.html">OM TORK</a></li>
                 <li><a href="hvordan-tork.html">HVORDAN TORK</a></li>
-                <li><a href="anbefald-tork.html">ANBEFALD TORK</a></li>
+                <a id="logo2" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
+                <li><a href="anbefald-tork.html">ANBEFAL TORK</a></li>
                 <li><a href="k%C3%B8b-tork.html">KØB TORK</a></li>
             </ul>
-</nav>
-   </header>
+        </nav>
+</header>
    
 <div class="om">
    <main>
    
    <section>
-   <img src="images/hvorfor-os-1-v2.jpg" alt="stran" id="cover1">
+   <img src="images/hvorfor-os-1-v2.jpg" alt="stran" id="cover1om">
    </section>
    
    <section class="textx">
    <h1>Møljøvenlighed</h1>
    <img src="images/milj%C3%B8-ikon.png" alt="miljø ikon" class="ikon">
-   <p>De miljømæssige og økonomiske <br>
+   <p><b>De miljømæssige og økonomiske <br>
 fordele ved genbrugspapir som 
 råvare afhænger af tilgængelighed, 
 transportafstand og kvaliteten 
 af det indsamlede materiale.
+<br>
 Genbrug af papir er en effektiv 
-ressourceudnyttelse, 
+ressourceudnyttelse,
+<br> 
 da træfibrene anvendes 
 mere end én gang.
-
+</b>
 </p>
   </section>
   <section>
-    <img src="images/kemi-toiletpapir-v2.jpg" alt="" id="cover3">
+    <img src="images/kemi-toiletpapir-v2.jpg" alt="" id="cover3om">
    </section>
   <section class="text4">
    <h1>Kemikalier</h1>
-   <p>Der stilles store krav til genbrugsfibres 
+   <p><b>Der stilles store krav til genbrugsfibres 
 kvalitet og renhed, 
 og hvert led i kæden er vigtigt (indsamling, 
 sortering, transport, opbevaring, brug) 
 for at garantere sikre og 
 hygiejniske produkter.
+</b>
 </p>
 
 <img src="images/atom-toiletpapir2.png" alt="atom-ikon" class="ikon">
 
-<p>Genbrugspapir kan fremstilles både af aviser, 
+<p>
+<b>Genbrugspapir kan fremstilles både af aviser, 
 blade og papiraffald fra kontorer. 
 Kvaliteten af det genindvundne 
 papir udvælges for hvert 
@@ -89,15 +92,17 @@ Papiret opløses i vand,
 vaskes og behandles med kemikalier 
 under høje temperaturer, 
 hvorefter det sies for at fjerne urenheder.
+</b>
 </p>
   </section>
   
   <section>
-  <img src="images/hvorfor-os-2-v3.jpg" alt="" id="cover2">
+  <img src="images/hvorfor-os-2-v3.jpg" alt="" id="cover9">
   <section class="text6">
    <h1> Som en del af Essity</h1>
    <img src="images/baby-ikon.png" alt="baby-ikon" class="ikon">
-   <p>
+<p>
+<b>  
 ligger vores fokus på at opfylde 
 dine behov på en bæredygtig måde - 
 hvormed vi sparer dig tid, penge og kræfter, 
@@ -115,15 +120,33 @@ om de vigtige ting i din forretning.
  
 Find det, som virker bedst for dig, 
 ved at søge i vores produkter eller anbefalinger.
+</b>
 </p>
  </section>
   </section>
   
    </main>
+   
 </div>
    
-   <footer>
-   <a href="index.html">TOP</a>
+<footer>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}</script>
    </footer>
 
 </body>

@@ -10,7 +10,7 @@
 
     <title>TORK Toiletpapir</title>
     <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
-    <meta name="description" content="Here you add the description of your content">
+    <meta name="description" content="tork, tork toiletpapir, papir, hygiejne, toilet">
     <!-- this is for search engne optimization - fill in description of the page content. This will usually be the text shown under the heading in a search. Can contain up to 155 characters-->
     <link rel="stylesheet" href="css/style.css">
     <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
@@ -23,10 +23,9 @@
 
 <body>
   
-   <header>
-   
-  
-<section id="logo-burger">
+ <!-- Navigation -->
+    <header>
+        <section id="logo-burger">
             <a id="logo" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
             <label for="toggle">&#9776;</label>
         </section>
@@ -36,27 +35,30 @@
             <ul id="main-nav">
                 <li><a href="om-tork.html">OM TORK</a></li>
                 <li><a href="hvordan-tork.html">HVORDAN TORK</a></li>
-                <li><a href="anbefald-tork.html">ANBEFALD TORK</a></li>
+                <a id="logo2" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
+                <li><a href="anbefald-tork.html">ANBEFAL TORK</a></li>
                 <li><a href="k%C3%B8b-tork.html">KØB TORK</a></li>
             </ul>
-</nav>
-   </header>
+        </nav>
+</header>
    
    <main>
    <div class="forside">
    
+   <section class="avater">
    <img src="images/forside-2-v2.png" alt="avatar for 4 lag" id="forsidebilledet">
-   
+   <img src="images/forside-1-v3.png" alt="" class="forsidebilledet3">
+   </section>
    
    <section class="text1">
    <h1><b>Hvorfor Tork?</b></h1>
    <p><b>Tork er det førende globale <br>
 brand inden for hygiejne<br> på arbejdspladser.</b></p>
 
-<p><b>Fra papirhåndklædeark på <br> toiletter på 
+<p><b>Fra papirhåndklædeark på <br> 
 hospitaler<br> til servietdispensere<br> i restauranter, 
-så dækker<br> Tork brugerens behov og <br>
-giver køberen en<br> praktisk løsning.</b>
+over alt dækker <br> Tork dit behov og <br>
+giver dig en<br> praktisk løsning.</b>
 </p>
   </section>
   
@@ -73,23 +75,21 @@ giver køberen en<br> praktisk løsning.</b>
       </section>
        
        <section>
-           <img src="" alt="">
            <section class="text2">
            <section>
-   <h1>3 - lag</h1>
-   <p> Få dine gæster til at føle sig hjemme,<br> 
+   <h1><b>3 - lag</b></h1>
+   <p><b> Få dine gæster til at føle sig hjemme,<br> 
 når de er ude, 
 <br><br>
-med Tork 3 Toiletpapir. 
+med Torks 3-lags. 
 <br>
-Bløde toiletpapir
+Bløde toiletpapir får du:
 <br>
 Høj kvalitet 
 <br>
-Perfekt til dit toilet
-<br>
-med en god pris
-</p>
+
+Som er økononisk fordelagtigt
+</b></p>
 <img src="images/produktet-2-v2.png" alt="" id="produkt1">
 </section>
 <section>
@@ -144,15 +144,15 @@ Hvid
       
        </div>
    </main>
+<footer>
+
+<!-- jeg fandt dette kode på URL: https://www.w3schools.com/code/tryit.asp?filename=FY6FPTT8BD08 -->
    
-   <!-- til op top button -->
    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+window.onscroll = function() {scrollFunction()};function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("myBtn").style.display = "block";
   } else {
@@ -164,9 +164,8 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-</script>
-<!-- til op top button -->
+}</script>
+</footer>
 
 
 </body>

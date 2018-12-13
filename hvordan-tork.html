@@ -23,31 +23,28 @@
 
 <body>
   
-   <header>
-   <!-- destop menu og min mindler tidlinge menu 
-fik kopier kode fra michelles nav bar  url:https://github.com/michellemotivates/flexnavigation -->
-
-
-<section id="logo-burger">
+    <header>
+        <section id="logo-burger">
             <a id="logo" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
             <label for="toggle">&#9776;</label>
         </section>
         <nav>
-            <input type="checkbox" id="toggle" class="hidden1">
+            <input type="checkbox" id="toggle" class="hidden">
             <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
             <ul id="main-nav">
                 <li><a href="om-tork.html">OM TORK</a></li>
                 <li><a href="hvordan-tork.html">HVORDAN TORK</a></li>
-                <li><a href="anbefald-tork.html">ANBEFALD TORK</a></li>
+                <a id="logo2" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
+                <li><a href="anbefald-tork.html">ANBEFAL TORK</a></li>
                 <li><a href="k%C3%B8b-tork.html">KØB TORK</a></li>
             </ul>
-</nav>
-   </header>
-   
+        </nav>
+</header>
+
 <div class="hvordan">
    <main>
    <section>
-   <img src="images/cover-hvordan-v2.jpg" alt="mskine op" id="cover1">
+   <img src="images/cover-hvordan-v2.jpg" alt="mskine op" id="cover1h">
    </section>
    <section class="text7">
    <h1>Materiale</h1>
@@ -60,31 +57,31 @@ baseret på  produktkrav og
 tilgængelig papirmasse, 
 så vi udnytter ressourcerne på den mest 
 effektive måde.
-
+<br>
 Jomfrufibre fremstilles af 
 bløde eller hårde træsorter. 
 Træet udsættes for kemiske og/eller 
 mekaniske processer, 
 hvor cellulosefibrene separeres, og 
 lignin og andre rester fjernes.
-
+<br>
 Blegning af fibrene er en renseproces, 
 som har til formål at opnå en hvid papirmasse, 
 men også at opnå en vis fiberrenhed med det 
 formål at opfylde kravene til hygiejneprodukter, 
 og i nogle tilfælde opfylde 
 kravene til fødevaresikkerhed.
-
+<br>
 I dag anvendes der 
 forskellige metoder til blegning
-
+<br>
 1. ECF 
 (elementært klorfri) hvor der bruges klordioxid 
- 
+<br>
 2. TCF 
 (total klorfri), hvor der anvendes ozon,
  ilt og hydrogenperoxid.
-
+<br>
 Blegning af genbrugsfibre med klorfri blegemidler 
 (hydrogenperoxid og natriumdithionit)
 </b>
@@ -96,8 +93,27 @@ Blegning af genbrugsfibre med klorfri blegemidler
    </main>
 </div>
    <footer>
+
+<!-- jeg fandt dette kode på URL: https://www.w3schools.com/code/tryit.asp?filename=FY6FPTT8BD08 -->
    
-   </footer>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}</script>
+</footer>
 
 </body>
 
