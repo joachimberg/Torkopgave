@@ -10,6 +10,15 @@ body{
     background-image: url(../images/baggrund-mobile2.jpg);
     background-repeat: repeat;
 }
+.text1f, .text2f, .text1a, .text1h, .text1k, .text1om, .text2om, .text3om{
+    background-color: #ffffff;
+    width: 80%;
+    font-size: 80%;
+    padding: 5% 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
 
 /*Navigation with flexbox */
 
@@ -135,8 +144,8 @@ footer #myBtn {
 }
 
 /* det her er css til forside */
-.forside{
-  display: grid;
+.forside, .hvordan, .anbefald, .kob, .om{
+  display: grid; 
   grid-row-gap: 0%;
   grid-template-columns: auto;
   margin-left: 20%;
@@ -162,16 +171,10 @@ footer #myBtn {
     width: 70%;
     margin-right: 10%;
 }
-.text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8,.textx{
-    background-color: #ffffff;
-    width: 80%;
-    font-size: 80%;
-    padding: 4% 0;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+
 
 h1{
-    margin: 5%;
+    margin: 8%;
 }
 
 /*  jeg prøver lige at fine en pile ned */
@@ -195,25 +198,21 @@ aside {
     grid-template-columns: auto auto;
 }
 aside p{
-    text-align:left;
+    text-align: left;
     margin: auto;
     color: cornflowerblue;
 }
-.text2{
+.text2f{
     margin: 0 0 20% 0;
 }
 
     
 /*  jeg prøver lige at fine en pile ned */
 
-.anbefald{
-  display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 20%;
-  text-align: center;
-}
-.anbefald #cover1{
+    
+
+/* ANBEFAL SIDE */
+#cover1a{
     width: 80%;
     float: left;
 }
@@ -223,92 +222,73 @@ form{
 }
 input{
         width: 80%;
+    text-align:center;
 }
-input{
-     text-align:center;
-}
+
 #input2{
         height: 600%;
 }
 
 
-.hvordan{
-     display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 20%;
-  text-align: center;
-}
-#cover1h{
+
+/* HVORDAN SIDE */
+#cover1h, #cover2h{
     width: 80%;
-    margin: 0 20% 0 0;
+    float: left;
 }
-#cover2{
-    width: 80%;
-    margin: 0 20% 30% 0;
+#cover2h{
+    margin: 0 0 30% 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
 }
 .ikon{
         width: 25%;
 }
+    
+    
+    
+/* KØB SIDE */
 
-.kob{
-    display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 20%;
-  text-align: center;
-}
-#coverx, #cover4, button{
+#cover1k, #cover2k{
     width: 80%;
-    margin: 0 20% 0 0;
+    float: left
 }
-.buttonkob{
+.buttonkob, .buttona{
     height: 20%;
+    width: 80%;
     background-color: #5D51FF;
     color: white;
     padding: 2%;
-    margin: 0% 20% 0 0;
 }
 .buttona{
-        height: 20%;
-    background-color: #5D51FF;
-    color: white;
-    padding: 2%;
-    margin: 35% 20% 0 0;
+    margin: 35% 0 0 0;
+    float: left;
     }
 button:hover{
     background-color: #847BFF;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 }
 
-.om{
-    display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 20%;
-  text-align: center;
-}
 
-#cover1om{
+#cover1om, #cover2om, #cover3om{
     width: 80%;
     float: left;
 }
 
-#cover3om{
-    width: 80%;
-    float: left;
-}
-    #cover9{
-        width: 80%;
-        float: left;
-    }
-.text6{
+
+.text3om{
     margin: 0 0 35% 0;   
-    }
+}
 
 
 }
 /* op til top klip */
+
+
+
+
+
+
+
 
 /*MEDIA QUERY MOBILE */
 
@@ -358,11 +338,11 @@ button:hover{
     }
     /*HEADER*/
 
-.forside{
-  display: grid;
-  grid-row-gap: 1%;
+.forside, .hvordan, .anbefald, .kob, .om{
+  display: grid; 
+  grid-row-gap: 0%;
   grid-template-columns: auto;
-  margin-left: 15%;
+  margin-left: 20%;
   text-align: center;
 }
 #forsidebilledet{
@@ -394,13 +374,7 @@ button:hover{
     margin: 0 0 0 10%;
     float: left;
 }
-.text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8,.textx{
-    background-color: #ffffff;
-    width: 80%;
-    font-size: 80%;
-    padding: 2% 0;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+
 
 h1{
     margin: 2%;
@@ -426,18 +400,12 @@ aside p{
 }
 /*  jeg prøver lige at fine en pile ned */
 
-.anbefald{
-  display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 15%;
-  text-align: center;
-}
-.anbefald #cover1{
+
+#cover1a{
     width: 80%;
     float: left;
 }
-.anbefald .text1{
+.text1a{
         float: left;
 }
 form{
@@ -459,61 +427,57 @@ input{
     background-color: #5D51FF;
 }
     
-
-.hvordan{
-     display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 15%;
-  text-align: center;
-}
-.hvordan #cover1{
+#cover1h{
     width: 80%;
     margin: 0 40% 0 0;
 }
-#cover2{
+#cover2h{
     width: 80%;
     margin: 0 40% 0 0;
 }
-    .hvordan .text7{
-        width: 80%;
-    }
-
-.kob{
-    display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 15%;
-  text-align: center;
+.text1h{
+    width: 80%;
 }
-#coverx, #cover4, button{
+#cover1k, #cover2k{
     width: 80%;
     margin: 0 0 0 0;
     float: left;
 }
-button{
+.buttona, .buttonkob{
     height: 20%;
+    width: 64%;
+    background-color: #5D51FF;
+    color: white;
+    padding: 2%;
+    margin: 0 0 0 20%;
 }
-.text8{
-      width: 80%;  
+.buttonkob{
+    margin: 0 0 0 0;
+    float: left;
+    width: 64%;
+}
+.buttona{
+    margin: 35% 0 0 0;
+    float: left;
+}
+button:hover{
+    background-color: #847BFF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 }
 
-.om{
-    display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 15%;
-  text-align: center;
-}
-.om #cover1{
+.om #cover1om{
     width: 80%;
     float: left
 }
-.om #cover3{
+.om #cover2om{
     width: 80%;
     float: left;
 }
-.om .textx, .text4, .text6{
+.om #cover3om{
+    width: 80%;
+    float: left;
+}
+.om .text1om, .text2om, .text3om{
      width: 80%;
 }  
 .ikon{
@@ -533,23 +497,31 @@ header {
         align-items: center;
         height: 10%;
 }
+
 #logo2 img{
-        width: 20%;
+        width: 10%;
+        margin: 0;
 }
 /*HEADER*/
 
-.forside{
-  display: grid;
-  grid-row-gap: 1%;
+.forside, .hvordan, .anbefald, .kob, .om{
+  display: grid; 
+  grid-row-gap: 0%;
   grid-template-columns: auto;
-  margin-left: 40%;
+  margin-left: 33%;
   text-align: center;
 }
+.text1f, .text2f, .text1a, .text1h, .text1k, .text1om, .text2om, .text3om{
+    width: 50%;
+    padding: 2%
+}
+h1{
+        margin: 1%;
+}
 #forsidebilledet{
-    width: 20%;
-    height: 10%;
-    margin-left: 0%;
+    width: 25%;
     z-index: 10;
+    float: left;
 }
 #forsidebilledet2{
     width: 10%;
@@ -557,40 +529,34 @@ header {
 }
 .forsidebilledet3{
     display: block;
-    width: 20%;
-    height: 10%;
-    margin-left: 0%;
+    width: 25%;
+    margin: 0 0 0 0%;
     z-index: 10;
+    float: right;
 }
-    .avater{
-        display: flex;
-        flex-direction: row;
+.avater{
+
 }
 #produkt1{
     width: 20%;
     margin: 5% 0%;
 }
 .produkt2{
-    width: 40%;
+    width: 50%;
+
     margin: 0 0 0 0;
     float: left;
 }
-.text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8,.textx{
-    background-color: #ffffff;
-    width: 40%;
-    font-size: 80%;
-    padding: 2% 0;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 h1{
-    margin: 2%;
+    margin: 10%;
 }
 
 /*  jeg prøver lige at fine en pile ned */
-
+i {
+  display: none;
+}
 .ned {
-    display: none
+    margin: 0 0 15% 32%;
 }
 .down {
     transform: rotate(45deg);
@@ -601,106 +567,92 @@ aside {
     grid-template-columns: auto auto;
 }
 aside p{
-    text-align:left;
+    text-align: left;
     margin: auto;
     color: cornflowerblue;
 }
+.text2f{
+    margin: 0 0 20% 0;
+}
+
+    
 /*  jeg prøver lige at fine en pile ned */
 
-.anbefald{
-    display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 40%;
-  text-align: center;
-}
-.anbefald #cover1{
-    width: 40%;
+    
+
+/* ANBEFAL SIDE */
+#cover1a{
+    width: 50%;
     float: left;
 }
 form{
     display:grid;
     grid-template-columns: auto;
-    width: 40%;
 }
 input{
-     text-align: center;
-    }
+        width: 62.5%;
+    text-align: center;
+}
+
 #input2{
         height: 600%;
+}
+    /* margin var brugt her for at få textboksen ned under #cover1a */
+.text1a{
+        margin: 0 10% 0 0;
     }
-#formbox button{
-    width: 40%; 
+
+
+
+/* HVORDAN SIDE */
+#cover1h, #cover2h{
+    width: 50%;
     float: left;
-    margin: 14% 0 0 0;
-    color: white;
-    background-color: #5D51FF;
-    }
+}
+#cover2h{
+    margin: 0 0 30% 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+.ikon{
+        width: 25%;
+}
     
+    
+    
+/* KØB SIDE */
 
-.hvordan{
-     display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 30%;
-  text-align: center;
-}
-.hvordan #cover1{
-    width: 60%;
-    margin: 0 40% 0 0;
-}
-#cover2{
-    width: 60%;
-    margin: 0 40% 0 0;
-}
-    .hvordan .text7{
-        width: 60%;
-    }
-
-.kob{
-    display: grid;
-  grid-row-gap: 1%;
-  grid-template-columns: auto;
-  margin-left: 30%;
-  text-align: center;
-}
-#coverx, #cover4, button{
-    width: 60%;
-    margin: 0 0 0 0;
-    float: left;
-}
-button{
-    height: 20%;
-}
-.text8{
-    width: 60%;  
-}
-
-.om{
-    display: grid;
-   grid-row-gap: 1%;
-   grid-template-columns: auto;
-   margin-left: 30%;
-   text-align: center;
-}
-#cover1om{
-    width: 60%;
+#cover1k, #cover2k, .buttonkob{
+    width: 80%;
     float: left
 }
-#cover3om{
-    width: 60%;
+.buttonkob, .buttona{
+    height: 20%;
+    width: 80%;
+    background-color: #5D51FF;
+    color: white;
+    padding: 2%;
+}
+.buttona{
+    margin: 35% 0 0 0;
+    float: left;
+    }
+button:hover{
+    background-color: #847BFF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+
+
+.om #cover1om, .om #cover2om, .om #cover3om{
+    width: 50%;
     float: left;
 }
-#cover9{
-    width: 60%;
-    float: left;
+.om .text1om{
+        width: 50%;
+    }
+.text3om{
+    margin: 0 0 15% 0; 
 }
-.om .textx, .text4, .text6{
-    width: 60%;
-}  
-.ikon{
-    width: 20%;   
-}
+
 footer{
         display: none;
 }
