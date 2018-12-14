@@ -7,7 +7,7 @@ box-sizing: border-box;
 }
 body{
     width: 100%;
-    background-image: url(../images/baggrund-done.jpg);
+    background-image: url(../images/baggrund-mobile-done.jpg);
     background-repeat: repeat;
 }
 .text1f, .text2f, .text1a, .text1h, .text1k, .text1om, .text2om, .text3om{
