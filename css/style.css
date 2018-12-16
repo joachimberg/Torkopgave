@@ -1,6 +1,4 @@
-/* her er hvad der skal bruges til alle sider */
-*{
-    font-family: 'Quicksand', sans-serif;
+*{font-family: 'Quicksand', sans-serif;
     padding: 0;
     margin: 0;
 box-sizing: border-box;
@@ -16,6 +14,31 @@ body{
     font-size: 80%;
     padding: 5% 5%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+ /* style til bruger menuen */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-10px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-4px, -6px);
 }
 
 
@@ -163,7 +186,7 @@ footer #myBtn {
 .forsidebilledet3{
     display: none;
 }
-#produkt1{
+#produkt1, #produkt2{
     width: 20%;
     margin: 5% 0%;
 }
@@ -364,7 +387,7 @@ button:hover{
         display: flex;
         flex-direction: row;
 }
-#produkt1{
+#produkt1, #produkt2{
     width: 20%;
     margin: 5% 0%;
 }
@@ -497,6 +520,7 @@ header {
         flex-direction: row;
         align-items: center;
         height: 10%;
+        padding: 0 8% 0 0;
 }
 
 #logo2 img{
@@ -537,7 +561,7 @@ h1{
 .avater{
 
 }
-#produkt1{
+#produkt1, produkt2{
     width: 20%;
     margin: 5% 0%;
 }

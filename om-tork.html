@@ -16,9 +16,9 @@
     <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
     <!--det her er link til fonten-->
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-<link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
-    <!--favicon-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <!--- Dette er mit favicon, som er lavet med hjemmesiden: https://www.favicon-generator.org ---->
 </head>
 
 <body>
@@ -26,7 +26,11 @@
  <header>
         <section id="logo-burger">
             <a id="logo" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
-            <label for="toggle">&#9776;</label>
+            <label for="toggle"><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div></label>
         </section>
         <nav>
             <input type="checkbox" id="toggle" class="hidden">
@@ -135,7 +139,14 @@ ved at søge i vores produkter eller anbefalinger.
    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <script>
-// When the user scrolls down 20px from the top of the document, show the button
+// Når du trykker på brugermenuen at den bliver til et X
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+
+<script>
+// når du kommer 20px ned af siden kommer top knappen
 window.onscroll = function() {scrollFunction()};function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("myBtn").style.display = "block";
@@ -144,7 +155,7 @@ window.onscroll = function() {scrollFunction()};function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// når du trykker på top knappen kommer du tilbage op
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;

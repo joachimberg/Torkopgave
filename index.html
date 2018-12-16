@@ -10,15 +10,15 @@
 
     <title>TORK Toiletpapir</title>
     <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
-    <meta name="description" content="tork, tork toiletpapir, papir, hygiejne, toilet">
+    <meta name="description" content="tork, tork toiletpapir, papir, hygiejne, toilet, 3 lag, 4 lag, blødt">
     <!-- this is for search engne optimization - fill in description of the page content. This will usually be the text shown under the heading in a search. Can contain up to 155 characters-->
     <link rel="stylesheet" href="css/style.css">
     <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
     <!--det her er link til fonten-->
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-<link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
-    <!--favicon-->
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <!--- Dette er mit favicon, som er lavet med hjemmesiden: https://www.favicon-generator.org ---->
 </head>
 
 <body>
@@ -27,7 +27,11 @@
     <header>
         <section id="logo-burger">
             <a id="logo" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
-            <label for="toggle">&#9776;</label>
+            <label for="toggle"><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div></label>
         </section>
         <nav>
             <input type="checkbox" id="toggle" class="hidden">
@@ -35,7 +39,9 @@
             <ul id="main-nav">
                 <li><a href="om-tork.html">OM TORK</a></li>
                 <li><a href="hvordan-tork.html">HVORDAN TORK</a></li>
+                <li>
                 <a id="logo2" href="index.html"><img src="images/logo-2.png" alt="logo"></a>
+                </li>
                 <li><a href="anbefald-tork.html">ANBEFAL TORK</a></li>
                 <li><a href="k%C3%B8b-tork.html">KØB TORK</a></li>
             </ul>
@@ -161,7 +167,7 @@ Høj kvalitet
 
 Som er økononisk fordelagtigt
 </b></p>
-<img src="images/produkt-3lag.png" alt="3-lag avetar ikon" id="produkt1">
+<img src="images/produkt-3lag.png" alt="3-lag avetar ikon" id="produkt2">
 </section>
 <section>
  <aside>
@@ -220,6 +226,13 @@ Hvid
 <!-- jeg fandt dette kode på URL: https://www.w3schools.com/code/tryit.asp?filename=FY6FPTT8BD08 -->
    
    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   
+<script>
+// Når du trykker på brugermenuen at den bliver til et X
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
 
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
