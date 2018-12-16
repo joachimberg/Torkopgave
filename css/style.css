@@ -285,7 +285,10 @@ input{
 .buttona{
     margin: 35% 0 0 0;
     float: left;
-    }
+}
+.buttonkob{
+        float: left;
+}
 button:hover{
     background-color: #847BFF;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
